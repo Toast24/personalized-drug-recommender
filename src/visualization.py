@@ -21,10 +21,14 @@ def plot_metric_comparison(metrics: Dict[str, Dict[str, float]],
     metric_values = {metric: [metrics[model][metric] for model in models] 
                     for metric in selected_metrics}
     
-    # Set up the plot
+    # Set up the plot with style
+    plt.style.use('seaborn')
     plt.figure(figsize=(12, 6))
     x = np.arange(len(models))
     width = 0.8 / len(selected_metrics)
+    
+    # Color scheme
+    colors = ['#2ecc71', '#3498db', '#e74c3c']  # Green, Blue, Red
     
     # Plot bars for each metric
     for i, (metric, values) in enumerate(metric_values.items()):
