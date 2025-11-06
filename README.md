@@ -179,12 +179,12 @@ The project includes various visualization tools in `src/visualization.py`:
 1. **Model Performance Comparison**
    - Compare key metrics (F1, AUROC, NDCG@10) across models
    - Visualize relative strengths of each architecture
-   - ![Model Metrics](models/plots/metric_comparison.png)
+   - ![Model Metrics](plots/metric_comparison.png)
 
 2. **Convergence Analysis**
    - Compare training speed across models
    - Shows epochs until early stopping
-   - ![Convergence Speed](models/plots/convergence_comparison.png)
+   - ![Convergence Speed](plots/convergence_comparison.png)
 
 3. **Individual Model Analysis**
    - Confusion matrices for binary classification
