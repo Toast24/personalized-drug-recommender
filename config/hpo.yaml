@@ -1,0 +1,7 @@
+training:
+  n_folds: 5
+  batch_size: 32
+  n_epochs: 10
+
+optuna:
+  n_trials: 20

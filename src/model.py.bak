@@ -1,0 +1,57 @@
+"""PyTorch model definitions for patient-drug interaction."""
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+
+
+class PatientEncoder:
+    """Patient encoder module - imports torch only when instantiated."""
+    def __init__(self, input_dim: int, latent_dim: int = 64, hidden: int = 128):
+        import torch.nn as nn
+        super(nn.Module, self).__init__()
+        self.net = nn.Sequential(
+            nn.Linear(input_dim, hidden),
+            nn.ReLU(),
+            nn.Linear(hidden, latent_dim),
+        )
+
+    def forward(self, x):
+        return self.net(x)
+
+
+class DrugEncoder(nn.Module):
+    def __init__(self, input_dim: int, latent_dim: int = 64):
+        super().__init__()
+        self.net = nn.Sequential(
+            nn.Linear(input_dim, latent_dim),
+            nn.ReLU(),
+        )
+
+    def forward(self, x):
+        return self.net(x)
+
+
+class InteractionModel(nn.Module):
+    def __init__(self, patient_dim: int, drug_dim: int, latent_dim: int = 64, mlp: bool = False):
+        super().__init__()
+        self.patient_enc = PatientEncoder(patient_dim, latent_dim)
+        self.drug_enc = DrugEncoder(drug_dim, latent_dim)
+        self.mlp = mlp
+        if mlp:
+            self.head = nn.Sequential(
+                nn.Linear(latent_dim * 2, latent_dim),
+                nn.ReLU(),
+                nn.Linear(latent_dim, 1)
+            )
+
+    def forward(self, patient_x, drug_x, mode='dot'):
+        p = self.patient_enc(patient_x)
+        q = self.drug_enc(drug_x)
+        if self.mlp or mode == 'mlp':
+            x = torch.cat([p, q], dim=-1)
+            out = self.head(x).squeeze(-1)
+            return out, p, q
+        else:
+            # dot product
+            out = (p * q).sum(dim=-1)
+            return out, p, q

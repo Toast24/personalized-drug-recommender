@@ -1,0 +1,39 @@
+{
+  "metrics": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 0.99999999995,
+    "auroc": 1.0,
+    "aupr": 1.0,
+    "ndcg@10": 0.9999999999,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.06999999999999999
+  },
+  "config": {
+    "hyperparameters": {
+      "latent_dim": 190,
+      "learning_rate": 0.002310254621174128,
+      "batch_size": 128
+    },
+    "performance": {
+      "validation_loss": 0.14144928567111492,
+      "cv_scores": [
+        0.14112582802772522,
+        0.1420183777809143,
+        0.1409836411476135,
+        0.14166929662227631
+      ]
+    },
+    "training": {
+      "n_folds": 5,
+      "early_stopping_patience": 5
+    }
+  },
+  "dataset_info": {
+    "n_drugs": 20,
+    "n_targets": 17,
+    "n_interactions": 17,
+    "sparsity": 0.949999988079071
+  }
+}

@@ -1,0 +1,458 @@
+[
+  {
+    "precision": 0.9009433962264151,
+    "recall": 0.9502487562189055,
+    "f1": 0.9249394672623842,
+    "auroc": 0.9794241849173377,
+    "aupr": 0.9803038698120805,
+    "ndcg@10": 0.9999999999779907,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.43,
+    "config": {
+      "latent_dim": 16,
+      "lr": 0.0005,
+      "weight_decay": 0.0,
+      "batch_size": 32,
+      "epochs": 50,
+      "run_name": "mf_ld16_lr0p0005_wd0p0_bs32"
+    }
+  },
+  {
+    "precision": 0.9048387096774193,
+    "recall": 0.9303482587064676,
+    "f1": 0.9174161896474748,
+    "auroc": 0.970835969066466,
+    "aupr": 0.9725904044168585,
+    "ndcg@10": 0.9999999999779907,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.45,
+    "config": {
+      "latent_dim": 16,
+      "lr": 0.0005,
+      "weight_decay": 0.0,
+      "batch_size": 128,
+      "epochs": 50,
+      "run_name": "mf_ld16_lr0p0005_wd0p0_bs128"
+    }
+  },
+  {
+    "precision": 0.9173419773095624,
+    "recall": 0.9386401326699834,
+    "f1": 0.927868852409023,
+    "auroc": 0.982740934502744,
+    "aupr": 0.9844926472179492,
+    "ndcg@10": 0.9999999999779907,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.47000000000000003,
+    "config": {
+      "latent_dim": 16,
+      "lr": 0.0005,
+      "weight_decay": 1e-05,
+      "batch_size": 32,
+      "epochs": 50,
+      "run_name": "mf_ld16_lr0p0005_wd1e-05_bs32"
+    }
+  },
+  {
+    "precision": 0.9228187919463087,
+    "recall": 0.912106135986733,
+    "f1": 0.9174311926105521,
+    "auroc": 0.9741270736808512,
+    "aupr": 0.9760420284640297,
+    "ndcg@10": 0.9999999999779907,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.49,
+    "config": {
+      "latent_dim": 16,
+      "lr": 0.0005,
+      "weight_decay": 1e-05,
+      "batch_size": 128,
+      "epochs": 50,
+      "run_name": "mf_ld16_lr0p0005_wd1e-05_bs128"
+    }
+  },
+  {
+    "precision": 0.8665594855305466,
+    "recall": 0.8938640132669984,
+    "f1": 0.8799999999500121,
+    "auroc": 0.9462851834755205,
+    "aupr": 0.9490415625549751,
+    "ndcg@10": 0.9988512878724027,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.47000000000000003,
+    "config": {
+      "latent_dim": 16,
+      "lr": 0.0001,
+      "weight_decay": 0.0,
+      "batch_size": 32,
+      "epochs": 50,
+      "run_name": "mf_ld16_lr0p0001_wd0p0_bs32"
+    }
+  },
+  {
+    "precision": 0.8025078369905956,
+    "recall": 0.8490878938640133,
+    "f1": 0.8251410152602735,
+    "auroc": 0.9034381357815733,
+    "aupr": 0.9114991601833358,
+    "ndcg@10": 0.9950768947721222,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.47000000000000003,
+    "config": {
+      "latent_dim": 16,
+      "lr": 0.0001,
+      "weight_decay": 0.0,
+      "batch_size": 128,
+      "epochs": 50,
+      "run_name": "mf_ld16_lr0p0001_wd0p0_bs128"
+    }
+  },
+  {
+    "precision": 0.8566929133858268,
+    "recall": 0.9021558872305141,
+    "f1": 0.8788368335526183,
+    "auroc": 0.9500749403042063,
+    "aupr": 0.9526743702054521,
+    "ndcg@10": 0.9986256034163878,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.47000000000000003,
+    "config": {
+      "latent_dim": 16,
+      "lr": 0.0001,
+      "weight_decay": 1e-05,
+      "batch_size": 32,
+      "epochs": 50,
+      "run_name": "mf_ld16_lr0p0001_wd1e-05_bs32"
+    }
+  },
+  {
+    "precision": 0.7730829420970265,
+    "recall": 0.8192371475953566,
+    "f1": 0.7954911432672722,
+    "auroc": 0.8734506163341369,
+    "aupr": 0.8822236320252881,
+    "ndcg@10": 0.9877117056445706,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.47000000000000003,
+    "config": {
+      "latent_dim": 16,
+      "lr": 0.0001,
+      "weight_decay": 1e-05,
+      "batch_size": 128,
+      "epochs": 50,
+      "run_name": "mf_ld16_lr0p0001_wd1e-05_bs128"
+    }
+  },
+  {
+    "precision": 0.5090595340811044,
+    "recall": 1.0,
+    "f1": 0.6746712406642684,
+    "auroc": 0.514761494849951,
+    "aupr": 0.5256731894856104,
+    "ndcg@10": 0.8222648782677215,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.47000000000000003,
+    "config": {
+      "latent_dim": 32,
+      "lr": 0.0005,
+      "weight_decay": 0.0,
+      "batch_size": 32,
+      "epochs": 50,
+      "run_name": "mf_ld32_lr0p0005_wd0p0_bs32"
+    }
+  },
+  {
+    "precision": 0.508182601205857,
+    "recall": 1.0,
+    "f1": 0.6739006281677671,
+    "auroc": 0.5340927305648728,
+    "aupr": 0.5496894085654869,
+    "ndcg@10": 0.7718123655265048,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.01,
+    "config": {
+      "latent_dim": 32,
+      "lr": 0.0005,
+      "weight_decay": 0.0,
+      "batch_size": 128,
+      "epochs": 50,
+      "run_name": "mf_ld32_lr0p0005_wd0p0_bs128"
+    }
+  },
+  {
+    "precision": 0.5090595340811044,
+    "recall": 1.0,
+    "f1": 0.6746712406642684,
+    "auroc": 0.5150330968565406,
+    "aupr": 0.5308489734257428,
+    "ndcg@10": 0.7759507933946204,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.45,
+    "config": {
+      "latent_dim": 32,
+      "lr": 0.0005,
+      "weight_decay": 1e-05,
+      "batch_size": 32,
+      "epochs": 50,
+      "run_name": "mf_ld32_lr0p0005_wd1e-05_bs32"
+    }
+  },
+  {
+    "precision": 0.508182601205857,
+    "recall": 1.0,
+    "f1": 0.6739006281677671,
+    "auroc": 0.5103891477930481,
+    "aupr": 0.5062021037795588,
+    "ndcg@10": 0.7555361963219343,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.01,
+    "config": {
+      "latent_dim": 32,
+      "lr": 0.0005,
+      "weight_decay": 1e-05,
+      "batch_size": 128,
+      "epochs": 50,
+      "run_name": "mf_ld32_lr0p0005_wd1e-05_bs128"
+    }
+  },
+  {
+    "precision": 0.5128205128205128,
+    "recall": 0.9830508474576272,
+    "f1": 0.6740267286010768,
+    "auroc": 0.5393169877408056,
+    "aupr": 0.556523527251737,
+    "ndcg@10": 0.7979465383347518,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.49,
+    "config": {
+      "latent_dim": 32,
+      "lr": 0.0001,
+      "weight_decay": 0.0,
+      "batch_size": 32,
+      "epochs": 50,
+      "run_name": "mf_ld32_lr0p0001_wd0p0_bs32"
+    }
+  },
+  {
+    "precision": 0.508182601205857,
+    "recall": 1.0,
+    "f1": 0.6739006281677671,
+    "auroc": 0.4998575202588381,
+    "aupr": 0.5136165889308962,
+    "ndcg@10": 0.7358148194167724,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.01,
+    "config": {
+      "latent_dim": 32,
+      "lr": 0.0001,
+      "weight_decay": 0.0,
+      "batch_size": 128,
+      "epochs": 50,
+      "run_name": "mf_ld32_lr0p0001_wd0p0_bs128"
+    }
+  },
+  {
+    "precision": 0.508182601205857,
+    "recall": 1.0,
+    "f1": 0.6739006281677671,
+    "auroc": 0.48780314049096146,
+    "aupr": 0.5111760970422441,
+    "ndcg@10": 0.7915603619211323,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.01,
+    "config": {
+      "latent_dim": 32,
+      "lr": 0.0001,
+      "weight_decay": 1e-05,
+      "batch_size": 32,
+      "epochs": 50,
+      "run_name": "mf_ld32_lr0p0001_wd1e-05_bs32"
+    }
+  },
+  {
+    "precision": 0.508182601205857,
+    "recall": 1.0,
+    "f1": 0.6739006281677671,
+    "auroc": 0.48152215856807856,
+    "aupr": 0.5020228306513809,
+    "ndcg@10": 0.7202461484073235,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.01,
+    "config": {
+      "latent_dim": 32,
+      "lr": 0.0001,
+      "weight_decay": 1e-05,
+      "batch_size": 128,
+      "epochs": 50,
+      "run_name": "mf_ld32_lr0p0001_wd1e-05_bs128"
+    }
+  },
+  {
+    "precision": 0.4987854251012146,
+    "recall": 1.0,
+    "f1": 0.6655861695936252,
+    "auroc": 0.5062142439554016,
+    "aupr": 0.5128454947493234,
+    "ndcg@10": 0.8336053882375195,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.39,
+    "config": {
+      "latent_dim": 64,
+      "lr": 0.0005,
+      "weight_decay": 0.0,
+      "batch_size": 32,
+      "epochs": 50,
+      "run_name": "mf_ld64_lr0p0005_wd0p0_bs32"
+    }
+  },
+  {
+    "precision": 0.4975767366720517,
+    "recall": 1.0,
+    "f1": 0.6645091693191659,
+    "auroc": 0.48043726771620665,
+    "aupr": 0.4936993920205261,
+    "ndcg@10": 0.7925861988287762,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.01,
+    "config": {
+      "latent_dim": 64,
+      "lr": 0.0005,
+      "weight_decay": 0.0,
+      "batch_size": 128,
+      "epochs": 50,
+      "run_name": "mf_ld64_lr0p0005_wd0p0_bs128"
+    }
+  },
+  {
+    "precision": 0.49797898140662894,
+    "recall": 1.0,
+    "f1": 0.6648677819307911,
+    "auroc": 0.499417985551426,
+    "aupr": 0.5042717771095662,
+    "ndcg@10": 0.7397060772402063,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.37,
+    "config": {
+      "latent_dim": 64,
+      "lr": 0.0005,
+      "weight_decay": 1e-05,
+      "batch_size": 32,
+      "epochs": 50,
+      "run_name": "mf_ld64_lr0p0005_wd1e-05_bs32"
+    }
+  },
+  {
+    "precision": 0.4975767366720517,
+    "recall": 1.0,
+    "f1": 0.6645091693191659,
+    "auroc": 0.48163392074163774,
+    "aupr": 0.4886811864889914,
+    "ndcg@10": 0.7555338593186296,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.01,
+    "config": {
+      "latent_dim": 64,
+      "lr": 0.0005,
+      "weight_decay": 1e-05,
+      "batch_size": 128,
+      "epochs": 50,
+      "run_name": "mf_ld64_lr0p0005_wd1e-05_bs128"
+    }
+  },
+  {
+    "precision": 0.4991896272285251,
+    "recall": 1.0,
+    "f1": 0.6659459459015256,
+    "auroc": 0.5052903286424186,
+    "aupr": 0.5021274175807986,
+    "ndcg@10": 0.7714320117155757,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.47000000000000003,
+    "config": {
+      "latent_dim": 64,
+      "lr": 0.0001,
+      "weight_decay": 0.0,
+      "batch_size": 32,
+      "epochs": 50,
+      "run_name": "mf_ld64_lr0p0001_wd0p0_bs32"
+    }
+  },
+  {
+    "precision": 0.49797898140662894,
+    "recall": 1.0,
+    "f1": 0.6648677819307911,
+    "auroc": 0.5209251158809036,
+    "aupr": 0.5144419969137219,
+    "ndcg@10": 0.7173088420256881,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.45,
+    "config": {
+      "latent_dim": 64,
+      "lr": 0.0001,
+      "weight_decay": 0.0,
+      "batch_size": 128,
+      "epochs": 50,
+      "run_name": "mf_ld64_lr0p0001_wd0p0_bs128"
+    }
+  },
+  {
+    "precision": 0.4975767366720517,
+    "recall": 1.0,
+    "f1": 0.6645091693191659,
+    "auroc": 0.4906590595899277,
+    "aupr": 0.4925889130268183,
+    "ndcg@10": 0.729905653382149,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.01,
+    "config": {
+      "latent_dim": 64,
+      "lr": 0.0001,
+      "weight_decay": 1e-05,
+      "batch_size": 32,
+      "epochs": 50,
+      "run_name": "mf_ld64_lr0p0001_wd1e-05_bs32"
+    }
+  },
+  {
+    "precision": 0.4975767366720517,
+    "recall": 1.0,
+    "f1": 0.6645091693191659,
+    "auroc": 0.524136635069111,
+    "aupr": 0.5248201149323701,
+    "ndcg@10": 0.7901985518290395,
+    "mrr": 1.0,
+    "map": 1.0,
+    "threshold": 0.01,
+    "config": {
+      "latent_dim": 64,
+      "lr": 0.0001,
+      "weight_decay": 1e-05,
+      "batch_size": 128,
+      "epochs": 50,
+      "run_name": "mf_ld64_lr0p0001_wd1e-05_bs128"
+    }
+  }
+]

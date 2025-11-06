@@ -1,0 +1,15 @@
+{
+  "hyperparameters": {
+    "latent_dim": 190,
+    "learning_rate": 0.002310254621174128,
+    "batch_size": 128
+  },
+  "performance": {
+    "validation_loss": 0.14144928567111492,
+    "cv_scores": [0.14112582802772522, 0.14201837778091431, 0.1409836411476135, 0.14166929662227631]
+  },
+  "training": {
+    "n_folds": 5,
+    "early_stopping_patience": 5
+  }
+}

@@ -1,0 +1,17 @@
+name: drug_rec
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.9
+  - numpy
+  - pandas
+  - scikit-learn
+  - pytorch
+  - torchvision
+  - rdkit
+  - pip
+  - pip:
+    - chembl_webresource_client
+    - optuna
+    - tqdm

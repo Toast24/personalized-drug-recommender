@@ -1,0 +1,14 @@
+torch>=1.12
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+shap
+umap-learn
+scipy
+tqdm
+requests
+optuna
+pyyaml
+rdkit
