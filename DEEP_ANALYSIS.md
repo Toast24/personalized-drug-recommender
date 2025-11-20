@@ -165,8 +165,70 @@ All models consistently achieve near-perfect recall (1.0000), indicating:
    - Efficient latent pattern capture
    - Good ranking performance
    - Most scalable approach
+## 5. SHAP demo responses
 
-## 5. Recommendations for Improvement
+### Drugs
+- aspirin  
+- lisinopril  
+- metformin  
+- amlodipine  
+- atorvastatin  
+
+### Features (10)
+- age  
+- sex  
+- bmi  
+- systolic_bp  
+- diastolic_bp  
+- cholesterol  
+- heart_rate  
+- diabetic  
+- smoker  
+- family_history  
+
+---
+
+### Patient 1
+
+**Feature values:**  
+age 68, sex 1, bmi 30.5, systolic 152, diastolic 89, cholesterol 240, heart_rate 92, diabetic 0, smoker 1, family_history 1
+
+| Feature        | aspirin | lisinopril | metformin | amlodipine | atorvastatin |
+|----------------|--------:|-----------:|----------:|-----------:|-------------:|
+| age            | +0.38   | +0.52      | −0.14     | +0.27      | +0.19        |
+| sex            | +0.05   | +0.01      | −0.02     | +0.04      | +0.03        |
+| bmi            | +0.11   | +0.06      | −0.20     | +0.09      | +0.31        |
+| systolic_bp    | −0.15   | +0.80      | −0.03     | +0.89      | −0.11        |
+| diastolic_bp   | −0.10   | +0.44      | −0.02     | +0.33      | −0.08        |
+| cholesterol     | +0.06   | −0.09      | −0.03     | −0.02      | +0.92        |
+| heart_rate     | +0.02   | −0.04      | −0.01     | +0.03      | −0.02        |
+| diabetic       | 0.00    | 0.00       | −0.40     | 0.00       | 0.00         |
+| smoker         | +0.18   | −0.14      | −0.18     | −0.15      | +0.13        |
+| family_history | +0.10   | +0.12      | 0.00      | +0.08      | +0.15        |
+| **Total**      | **+0.65** | **+1.68** | **−1.03** | **+1.56** | **+1.52**     |
+
+---
+
+### Patient 2
+
+**Feature values:**  
+age 45, sex 0, bmi 27.1, systolic 128, diastolic 82, cholesterol 180, heart_rate 75, diabetic 1, smoker 0, family_history 0
+
+| Feature        | aspirin | lisinopril | metformin | amlodipine | atorvastatin |
+|----------------|--------:|-----------:|----------:|-----------:|-------------:|
+| age            | −0.05   | −0.02      | +0.03     | −0.03      | −0.04        |
+| sex            | 0.00    | −0.01      | 0.00      | 0.00       | 0.00         |
+| bmi            | −0.03   | −0.08      | −0.12     | −0.04      | −0.02        |
+| systolic_bp    | +0.03   | +0.17      | +0.01     | +0.12      | 0.00         |
+| diastolic_bp   | +0.02   | +0.10      | 0.00      | +0.07      | 0.00         |
+| cholesterol     | −0.02   | −0.01      | 0.00      | −0.01      | +0.14        |
+| heart_rate     | 0.00    | −0.02      | 0.00      | +0.01      | −0.01        |
+| diabetic       | −0.20   | −0.12      | +1.25     | −0.15      | −0.11        |
+| smoker         | 0.00    | 0.00       | 0.00      | 0.00       | 0.00         |
+| family_history | 0.00    | 0.00       | 0.00      | 0.00       | 0.00         |
+| **Total**      | **−0.25** | **+0.09** | **+1.17** | **−0.06** | **−0.06**     |
+
+## 6. Recommendations for Improvement
 
 1. **Data Enhancement**:
    - Add drug interaction data
@@ -183,7 +245,7 @@ All models consistently achieve near-perfect recall (1.0000), indicating:
    - Include confidence metrics
    - Measure computational efficiency
 
-## 6. Conclusion
+## 7. Conclusion
 
 The analysis reveals a system with strong potential for clinical application, with each model offering distinct advantages:
 
