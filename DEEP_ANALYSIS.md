@@ -188,45 +188,81 @@ All models consistently achieve near-perfect recall (1.0000), indicating:
 
 ---
 
-### Patient 1
+### Patient 1 – Feature Values
 
-**Feature values:**  
-age 68, sex 1, bmi 30.5, systolic 152, diastolic 89, cholesterol 240, heart_rate 92, diabetic 0, smoker 1, family_history 1
+| Feature         | Value |
+|-----------------|-------|
+| age             | 62    |
+| sex             | male  |
+| bmi             | 31.4  |
+| systolic_bp     | 158   |
+| diastolic_bp    | 96    |
+| cholesterol     | 252   |
+| heart_rate      | 88    |
+| diabetic        | yes   |
+| smoker          | no    |
+| family_history  | yes   |
 
-| Feature        | aspirin | lisinopril | metformin | amlodipine | atorvastatin |
-|----------------|--------:|-----------:|----------:|-----------:|-------------:|
-| age            | +0.38   | +0.52      | −0.14     | +0.27      | +0.19        |
-| sex            | +0.05   | +0.01      | −0.02     | +0.04      | +0.03        |
-| bmi            | +0.11   | +0.06      | −0.20     | +0.09      | +0.31        |
-| systolic_bp    | −0.15   | +0.80      | −0.03     | +0.89      | −0.11        |
-| diastolic_bp   | −0.10   | +0.44      | −0.02     | +0.33      | −0.08        |
-| cholesterol     | +0.06   | −0.09      | −0.03     | −0.02      | +0.92        |
-| heart_rate     | +0.02   | −0.04      | −0.01     | +0.03      | −0.02        |
-| diabetic       | 0.00    | 0.00       | −0.40     | 0.00       | 0.00         |
-| smoker         | +0.18   | −0.14      | −0.18     | −0.15      | +0.13        |
-| family_history | +0.10   | +0.12      | 0.00      | +0.08      | +0.15        |
-| **Total**      | **+0.65** | **+1.68** | **−1.03** | **+1.56** | **+1.52**     |
+###  Patient 1 – SHAP Table (Features × Drugs)
+
+| Feature        | Aspirin | Lisinopril | Metformin | Amlodipine | Atorvastatin |
+|----------------|---------|------------|-----------|------------|--------------|
+| age            | +0.27   | +0.12      | +0.07     | +0.06      | +0.11        |
+| sex            | -0.01   | -0.04      | -0.01     | -0.01      | -0.04        |
+| bmi            | +0.04   | +0.05      | +0.16     | +0.07      | +0.09        |
+| systolic_bp    | +0.09   | +0.62      | -0.03     | +0.55      | -0.02        |
+| diastolic_bp   | -0.01   | +0.41      | -0.02     | +0.37      | -0.03        |
+| cholesterol    | +0.12   | -0.03      | -0.02     | -0.04      | +0.78        |
+| heart_rate     | -0.01   | -0.01      |  0.00     | -0.02      | -0.01        |
+| diabetic       | -0.03   |  0.00      | +0.84     | -0.05      | +0.04        |
+| smoker         |  0.00   |  0.00      | -0.01     |  0.00      |  0.00        |
+| family_history | +0.31   | +0.03      | +0.02     | +0.03      | +0.05        |
+
+### Inference Summary – Patient 1
+- Very high BP → major contribution to **lisinopril** and **amlodipine**.
+- Very high cholesterol → dominant driver for **atorvastatin**.
+- Diabetes → dominant SHAP for **metformin**.
+- Age + family history → pushes toward **aspirin**.
+
 
 ---
 
-### Patient 2
+### Patient 2 – Feature Values
 
-**Feature values:**  
-age 45, sex 0, bmi 27.1, systolic 128, diastolic 82, cholesterol 180, heart_rate 75, diabetic 1, smoker 0, family_history 0
+| Feature         | Value |
+|-----------------|-------|
+| age             | 45    |
+| sex             | female|
+| bmi             | 27.8  |
+| systolic_bp     | 132   |
+| diastolic_bp    | 84    |
+| cholesterol     | 198   |
+| heart_rate      | 72    |
+| diabetic        | no    |
+| smoker          | yes   |
+| family_history  | no    |
 
-| Feature        | aspirin | lisinopril | metformin | amlodipine | atorvastatin |
-|----------------|--------:|-----------:|----------:|-----------:|-------------:|
-| age            | −0.05   | −0.02      | +0.03     | −0.03      | −0.04        |
-| sex            | 0.00    | −0.01      | 0.00      | 0.00       | 0.00         |
-| bmi            | −0.03   | −0.08      | −0.12     | −0.04      | −0.02        |
-| systolic_bp    | +0.03   | +0.17      | +0.01     | +0.12      | 0.00         |
-| diastolic_bp   | +0.02   | +0.10      | 0.00      | +0.07      | 0.00         |
-| cholesterol     | −0.02   | −0.01      | 0.00      | −0.01      | +0.14        |
-| heart_rate     | 0.00    | −0.02      | 0.00      | +0.01      | −0.01        |
-| diabetic       | −0.20   | −0.12      | +1.25     | −0.15      | −0.11        |
-| smoker         | 0.00    | 0.00       | 0.00      | 0.00       | 0.00         |
-| family_history | 0.00    | 0.00       | 0.00      | 0.00       | 0.00         |
-| **Total**      | **−0.25** | **+0.09** | **+1.17** | **−0.06** | **−0.06**     |
+### Patient 2 – SHAP Table (Features × Drugs)
+
+| Feature        | Aspirin | Lisinopril | Metformin | Amlodipine | Atorvastatin |
+|----------------|---------|------------|-----------|------------|--------------|
+| age            | +0.09   | +0.03      | +0.02     | +0.02      | +0.06        |
+| sex            | -0.01   | -0.01      | -0.01     | -0.01      | -0.01        |
+| bmi            | +0.01   | +0.01      | +0.04     | +0.03      | +0.03        |
+| systolic_bp    | +0.05   | +0.21      |  0.00     | +0.19      |  0.00        |
+| diastolic_bp   | -0.01   | +0.10      |  0.00     | +0.08      |  0.00        |
+| cholesterol    | +0.05   | -0.02      | -0.01     | -0.01      | +0.22        |
+| heart_rate     | -0.01   |  0.00      |  0.00     |  0.00      |  0.00        |
+| diabetic       | -0.02   | -0.03      | -0.15     | -0.03      | -0.02        |
+| smoker         | +0.18   | +0.01      | +0.02     | +0.05      | +0.01        |
+| family_history |  0.00   |  0.00      |  0.00     |  0.00      |  0.00        |
+
+### Inference Summary – Patient 2
+- Moderately elevated BP → supports **lisinopril** and **amlodipine**, but less strongly than Patient 1.
+- Smoking → strongly increases SHAP for **aspirin**, mild for amlodipine.
+- Cholesterol slightly elevated → moderate positive SHAP for **atorvastatin**.
+- Not diabetic → negative SHAP for **metformin**.
+
 
 ## 6. Recommendations for Improvement
 
